@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bdd", "Bdd\Bdd.csproj", "{88A27A74-CF03-4B4B-B274-EB020E2C06A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AST", "VarDictionary\AST.csproj", "{91F41B82-B58D-43D2-A79A-3AF956118B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{490EB806-BF1F-4ABE-872F-DF8DD41B73DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend2\Frontend.csproj", "{BA906D8C-6782-415A-A3DD-AB862026C3A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddTest", "..\BddTest\BddTest.csproj", "{07052EAE-4625-46E2-834B-22316113D1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontendTest", "..\FrontendTest\FrontendTest.csproj", "{79D54CBB-0ECC-4908-9EA3-11E52AA0C528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserTest", "..\ParserTest\ParserTest.csproj", "{4B8ED1B4-8DF9-4056-A044-06C8C0D7A720}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91781714-A415-4A90-961D-DC9051126356}"
+	ProjectSection(SolutionItems) = preProject
+		BddSharp1.vsmdi = BddSharp1.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{26EDE2FF-9493-4907-AB5A-1EE3C793E53E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BddSharp1.vsmdi
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Bdd\\Bdd.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Bdd\\
+		SccProjectUniqueName2 = Frontend2\\Frontend.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Frontend2\\
+		SccProjectUniqueName3 = Parser\\Parser.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Parser\\
+		SccProjectUniqueName4 = VarDictionary\\AST.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = VarDictionary\\
+		SccProjectUniqueName5 = ..\\BddTest\\BddTest.csproj
+		SccProjectName5 = \u0022$/code/BddSharp.root/BddSharp/BddTest\u0022,\u0020WSAAAAAA
+		SccLocalPath5 = ..\\BddTest
+		SccProjectUniqueName6 = ..\\FrontendTest\\FrontendTest.csproj
+		SccProjectName6 = \u0022$/code/BddSharp.root/BddSharp/FrontendTest\u0022,\u0020XSAAAAAA
+		SccLocalPath6 = ..\\FrontendTest
+		SccProjectUniqueName7 = ..\\ParserTest\\ParserTest.csproj
+		SccProjectName7 = \u0022$/code/BddSharp.root/BddSharp/ParserTest\u0022,\u0020YSAAAAAA
+		SccLocalPath7 = ..\\ParserTest
+		SccProjectUniqueName8 = Examples\\Examples.csproj
+		SccProjectName8 = \u0022$/code/BddSharp.root/BddSharp/Examples\u0022,\u0020GSAAAAAA
+		SccLocalPath8 = Examples
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88A27A74-CF03-4B4B-B274-EB020E2C06A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A27A74-CF03-4B4B-B274-EB020E2C06A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A27A74-CF03-4B4B-B274-EB020E2C06A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A27A74-CF03-4B4B-B274-EB020E2C06A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F41B82-B58D-43D2-A79A-3AF956118B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F41B82-B58D-43D2-A79A-3AF956118B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F41B82-B58D-43D2-A79A-3AF956118B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F41B82-B58D-43D2-A79A-3AF956118B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490EB806-BF1F-4ABE-872F-DF8DD41B73DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490EB806-BF1F-4ABE-872F-DF8DD41B73DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490EB806-BF1F-4ABE-872F-DF8DD41B73DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490EB806-BF1F-4ABE-872F-DF8DD41B73DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA906D8C-6782-415A-A3DD-AB862026C3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA906D8C-6782-415A-A3DD-AB862026C3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA906D8C-6782-415A-A3DD-AB862026C3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA906D8C-6782-415A-A3DD-AB862026C3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07052EAE-4625-46E2-834B-22316113D1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07052EAE-4625-46E2-834B-22316113D1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07052EAE-4625-46E2-834B-22316113D1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07052EAE-4625-46E2-834B-22316113D1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D54CBB-0ECC-4908-9EA3-11E52AA0C528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D54CBB-0ECC-4908-9EA3-11E52AA0C528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D54CBB-0ECC-4908-9EA3-11E52AA0C528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D54CBB-0ECC-4908-9EA3-11E52AA0C528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8ED1B4-8DF9-4056-A044-06C8C0D7A720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8ED1B4-8DF9-4056-A044-06C8C0D7A720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8ED1B4-8DF9-4056-A044-06C8C0D7A720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8ED1B4-8DF9-4056-A044-06C8C0D7A720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26EDE2FF-9493-4907-AB5A-1EE3C793E53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26EDE2FF-9493-4907-AB5A-1EE3C793E53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26EDE2FF-9493-4907-AB5A-1EE3C793E53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26EDE2FF-9493-4907-AB5A-1EE3C793E53E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

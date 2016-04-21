@@ -1,0 +1,75 @@
+
+BE ::= 	  BE "|" BE
+	| BE "&" BE
+	| BE "=" BE
+	| BE "=>" BE
+	| BE "<=" BE
+	| BE "!&" BE
+	| BE "!=" BE
+	| BE "!|" BE
+	| BE ">" BE
+	| BE "<" BE
+	| "!" BE
+	| "(" "exists" "(" VARLIST ")" BE ")"
+	| "forall" "(" VARLIST ")" BE
+	| VAR
+	| "(" BE ")"
+	| "!" BE
+	| "0"
+	| "1"
+
+VARLIST ::= VAR "," VARLIST 
+	| VAR
+
+-------------------------------------------
+
+BE		::= EXISTS
+EXISTS	::= "(" "exists" "(" VARLIST ")" DISJ ")" | FORALL
+FORALL	::= "(" "forall" "(" VARLIST ")" DISJ ")" | DISJ
+DISJ    ::= DISJ "|" CONJ | CONJ
+CONJ    ::= CONJ "&" BIMP | BIMP
+BIMP	::= BIMP "=" IMPL | IMPL
+IMPL	::= IMPL "=>" INVIMPL | INVIMPL
+INVIMPL ::= INVIMPL "<=" NAND | NAND
+NAND	::= NAND "!&" XOR | XOR
+XOR		::= XOR "!=" NOR | NOR
+NOR		::= NOR "!|" GREATER | GREATER
+GREATER	::= GREATER ">" LESSER | LESSER
+LESSER	::= LESSER "<" PRIM | PRIM
+PRIM	::= "0" | "1" | "(" BE ")" | VAR | "!" BE
+
+VARLIST ::= VAR "," VARLIST | VAR 
+
+
+------------------------------------------------
+
+BE			= EXISTS
+EXISTS		= FORALL EXISTSOpt | \Lambda
+EXISTSOpt	= "(" "exists" "(" VARLIST ")" DISJ ")" 
+FORALL		= DISJ FORALLOpt	| \Lamda
+FORALLOpt	= "(" "forall" "(" VARLIST ")" DISJ ")"
+DISJ		= CONJ DISJOpt 
+DISJOpt		= "|" CONJ DISJOpt | \Lambda
+CONJ		= BIMP CONJOpt 
+CONJOpt		= "&" BIMP CONJOpt | \Lambda
+BIMP		= IMPL BIMPOpt 
+BIMPOpt		= "=" IMPL BIMPOpt | \Lambda
+IMPL		= INVIMPL IMPLOpt
+IMPLOpt		= "=>" INVIMPL IMPLOpt | \Lamda
+INVIMPL		= NAND INVIMPLOpt 
+INVIMPLOpt	= "<=" NAND INVIMPLOpt | \Lambda
+NAND		= XOR NANDOpt
+NANDOpt		= "!&" XOR NANDOpt | \Lambda
+XOR			= NOR XOROpt
+XOROpt		= "!=" NOR XOROpt | \Lambda
+NOR			= GREATER NOROpt
+NOROpt		= "!|" GREATER NOROpt | \Lambda
+GREATER		= LESSER GREATEROpt
+GREATEROpt	= ">" LESSER GREATEROpt | \Lambda
+LESSER		= PRIM LESSEROpt
+LESSEROpt	= "<" PRIM LESSEROpt | \Lambda
+PRIM		= PRIM
+VARS		= "," VAR
+
+VARLIST		= VAR VARLISTOpt
+VARLISTOpt	= ","  VAR VARLISTOpt
