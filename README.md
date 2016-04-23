@@ -1,6 +1,8 @@
 # bddsharp
 Implementation of a BDD Library in .NET
 
+[![Build Status](https://travis-ci.org/sorenjuul/bddsharp.svg?branch=master)](https://travis-ci.org/sorenjuul/bddsharp)
+
 From Abstract written in 2006
 
 This Master Thesis involved a series of implementation techniques in order
